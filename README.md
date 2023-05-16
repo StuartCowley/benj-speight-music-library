@@ -52,8 +52,10 @@ POST, GET, PUT, PATCH, and DELETE requests to routes /artists, /artists/id/album
 
 Once the application is running, you can perform CRUD operations on the music library by sending requests to the API. The API endpoints are defined in the routes folder. You can use tools like Postman to test the API.
 
-Contribution
+### Contribution
+
 If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue.
 
-License
+### License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
