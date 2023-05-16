@@ -25,17 +25,35 @@ CRUD stands for Create, Read, Update, and Delete. These are the basic operations
 
 ## Installation
 
-Clone the repository: git clone https://github.com/yourusername/music-library.git
-Install the dependencies: npm install
+Clone the repository
+Install the dependencies: `npm install`
 Set up the database: create a Postgres database and update the config.js file with your database credentials.
-Run the application: npm start
+Run the application: `npm start`
 Usage
+Once the application is running, you can perform CRUD operations on the music library by sending requests to the API. The API endpoints are defined in the routes folder.
+
+## Usage
+
+To make CRUD requests, navigate to the root directory in your terminal and run:
+
+`npm start`
+This will start the application on http://localhost:3000.
+
+To update the locally-hosted Artists and Albums tables, you can make requests to the API routes specified in the routes files for artists and albums. For example, to create a new artist, you can make a POST request to http://localhost:3000/artists/ with the following JSON data in the request body:
+
+json
+
+{
+"name": "Metallica",
+"genre": "Metal"
+}
+
+POST, GET, PUT, PATCH, and DELETE requests to routes /artists, /artists/id/albums, and /albums.
+
 Once the application is running, you can perform CRUD operations on the music library by sending requests to the API. The API endpoints are defined in the routes folder. You can use tools like Postman to test the API.
 
-### Contribution
-
+Contribution
 If you find any issues or have suggestions for improvements, feel free to create a pull request or open an issue.
 
-### License
-
+License
 This project is licensed under the MIT License. See the LICENSE file for details.
