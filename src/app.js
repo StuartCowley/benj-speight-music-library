@@ -1,10 +1,11 @@
 const express = require("express");
-const artistController = require("./routes/artist");
+const artistRouter = require("./routes/artist");
+const albumRouter = require("./routes/album");
 
 const app = express();
 app.use(express.json());
 
-app.use("/artists", artistController);
-app.use;
+app.use("/", artistRouter);
+app.use("/", albumRouter);
 
 module.exports = app;
